@@ -1,24 +1,34 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Caneta BIC",
-            "price": 3.50
-        },
-        {
-            "id": 1,
-            "name": "Moto-Serra",
-            "price": 3258.50
-        },
-        {
-            "id": 1,
-            "name": "Computador",
-            "price": 35065.56
-        },
-        {
-            "id": 1,
-            "name": "Arroz",
-            "price": 13.50
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC",
+      "price": 3.5
+    },
+    {
+      "id": 2,
+      "name": "Moto-Serra",
+      "price": 3258.5
+    },
+    {
+      "id": 3,
+      "name": "Computador",
+      "price": 35065.56
+    },
+    {
+      "id": 4,
+      "name": "Arroz",
+      "price": 13.5
+    },
+    {
+      "name": "Produto de teste",
+      "price": 125.5,
+      "id": 5
+    },
+    {
+      "name": "oia só'",
+      "price": "10.00",
+      "id": 6
+    }
+  ]
 }
