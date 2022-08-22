@@ -1,0 +1,24 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Caneta BIC",
+            "price": 3.50
+        },
+        {
+            "id": 1,
+            "name": "Moto-Serra",
+            "price": 3258.50
+        },
+        {
+            "id": 1,
+            "name": "Computador",
+            "price": 35065.56
+        },
+        {
+            "id": 1,
+            "name": "Arroz",
+            "price": 13.50
+        }
+    ]
+}
