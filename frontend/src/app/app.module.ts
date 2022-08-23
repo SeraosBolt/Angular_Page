@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,11 +18,21 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductsCreateComponent } from './component/products/products-create/products-create.component';
 import  {HttpClientModule} from '@angular/common/http'
-
 import {FormsModule} from '@angular/forms'
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input';
-import { ProductsReadComponent } from './component/products/products-read/products-read.component'
+import { ProductsReadComponent } from './component/products/products-read/products-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
+
+import localePt from "@angular/common/locales/pt"
+import { registerLocaleData } from '@angular/common';
+import { ProductsUpdateComponent } from './component/products/products-update/products-update.component';
+import { ProductsDeleteComponent } from './component/products/products-delete/products-delete.component';
+
+registerLocaleData(localePt)
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +45,8 @@ import { ProductsReadComponent } from './component/products/products-read/produc
     ForDirective,
     ProductsCreateComponent,
     ProductsReadComponent,
+    ProductsUpdateComponent,
+    ProductsDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,9 +61,15 @@ import { ProductsReadComponent } from './component/products/products-read/produc
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

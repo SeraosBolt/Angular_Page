@@ -9,3 +9,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-alling{
     vertical-align: middle;
 }
+
+.msg-success{
+    background-color: #39b856;
+    color: #fff
+}

@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta BIC",
-      "price": 3.5
-    },
-    {
       "id": 2,
       "name": "Moto-Serra",
       "price": 3258.5
@@ -29,6 +24,11 @@
       "name": "oia só'",
       "price": "10.00",
       "id": 6
+    },
+    {
+      "name": "Testando",
+      "price": "12.50",
+      "id": 7
     }
   ]
 }
